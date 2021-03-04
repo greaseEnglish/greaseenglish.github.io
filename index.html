@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <a  class="watchCode hidden" href="github.com/">WATCH CODE</a>
+    <p class="hello hidden">Hello Mrs. Colcombet</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7qfYTJ5TPYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+
+        $('iframe').hide();
+
+        var hello = document.querySelector('.hello');
+        var code = document.querySelector('.watchCode');
+
+        var helloShow = function () {
+            hello.classList.remove('hidden');
+        }
+
+        var videoShow = function() {
+            $('iframe').show(800);
+        }
+
+        var showCode = function () {
+            code.classList.remove('hidden');
+        }
+
+        window.addEventListener('load', () => {
+            window.setInterval(helloShow, 1000);
+            window.setInterval(videoShow, 4000);
+            window.setInterval(showCode, 5500)
+        })
+    </script>
+</body>
+</html>

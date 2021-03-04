@@ -1,0 +1,64 @@
+
+body {
+    margin: 0;
+}
+
+a {
+    color: transparent;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+}
+
+.hello {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 90px;
+    transition: color 3500ms ease-out;
+}
+
+iframe {
+    margin-bottom: 75px;
+}
+
+.name {
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    background-color: black;
+    border: 2px solid black;
+
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+
+.watchCode {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin: 0;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+}
+
+.hidden {
+    color: transparent;
+}
