@@ -23,6 +23,7 @@
 
         var hello = document.querySelector('.hello');
         var code = document.querySelector('.watchCode');
+        var iframe = document.querySelector('iframe');
 
         var helloShow = function () {
             hello.classList.remove('hidden');
@@ -40,6 +41,13 @@
             window.setInterval(helloShow, 1000);
             window.setInterval(videoShow, 4000);
             window.setInterval(showCode, 5500)
+        })
+
+        iframe.addEventListener('click', () => {
+            console.log('yeah');
+            hello.classList.add('hidden');
+            hello.innerText = "Have a good video !";
+            hello.classList.remove('hidden');
         })
     </script>
 </body>

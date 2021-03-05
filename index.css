@@ -62,3 +62,10 @@ a {
 .hidden {
     color: transparent;
 }
+
+@media (max-width: 500px) {
+    iframe {
+        max-width: 300px;
+        max-height: 168.75px;
+    }
+}
